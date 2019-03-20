@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="self-info">
-      <el-container >标签 : </el-container>
+      <el-container class="tags">标签 : </el-container>
       <div class="tag-all">
         <el-tag v-for="tag in tags" :key="tag.id">{{ tag.name }}</el-tag>
       </div>
@@ -104,6 +104,7 @@
     margin-left: 20px;
     opacity: 0.8;
   }
+
   .self-info {
     text-align: left;
     background: $color-white;
@@ -113,6 +114,9 @@
     font-size: 14px;
     p {
       padding: 5px 0;
+    }
+    .tags{
+        margin-bottom: 10px;
     }
     .avatar-wrapper {
       display: flex;
