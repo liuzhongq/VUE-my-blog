@@ -10,7 +10,7 @@ const connect = () => {
     //增加数据库连接的事件监听
     mongoose.connection.on('disconnected',()=>{
         //进行重连
-        mongoose.connect(db,)
+        mongoose.connect(db,maxConnetTimes )
     })
 
     //数据库出现错误的时候
